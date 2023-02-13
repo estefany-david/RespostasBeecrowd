@@ -1,0 +1,3 @@
+SELECT P.name, F.name FROM products AS P 
+JOIN providers AS F ON P.id_providers = F.id
+WHERE id_categories = 6;
