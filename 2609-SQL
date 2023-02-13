@@ -1,0 +1,3 @@
+SELECT c.name, SUM(p.amount) FROM products AS p
+JOIN categories as c ON p.Id_categories = c.id
+GROUP BY c.name;
