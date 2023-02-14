@@ -1,0 +1,3 @@
+SELECT pdt.name, pvd.name FROM products pdt 
+JOIN providers pvd ON pdt.id_providers = pvd.id
+WHERE pvd.name = 'Ajax SA';
