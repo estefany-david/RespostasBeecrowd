@@ -1,0 +1,5 @@
+SELECT pdt.name, pvd.name, pdt.price
+FROM products pdt 
+JOIN providers pvd ON pdt.id_providers = pvd.id
+JOIN categories ctg ON pdt.id_categories = ctg.id
+WHERE pdt.price > 1000.0 AND ctg.name ='Super Luxury';
