@@ -1,0 +1,5 @@
+SELECT pdt.name, pvd.name, ctg.name
+FROM products pdt
+JOIN providers pvd ON pdt.id_providers = pvd.id
+JOIN categories ctg ON pdt.id_categories = ctg.id
+WHERE pvd.name = 'Sansul SA' AND ctg.name =  'Imported';
