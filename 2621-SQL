@@ -1,0 +1,3 @@
+SELECT pdt.name FROM products pdt
+JOIN providers pvd ON pdt.id_providers = pvd.id
+WHERE pvd.name LIKE 'P%' AND  pdt.amount BETWEEN 10 AND 20;
