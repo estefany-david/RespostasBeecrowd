@@ -1,0 +1,4 @@
+SELECT pdt.name, ctg.name FROM products pdt
+JOIN categories ctg ON pdt.id_categories = ctg.id
+WHERE pdt.amount > 100 AND ctg.id IN (1,2,3,6,9)
+ORDER BY ctg.id;
