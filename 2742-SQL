@@ -1,0 +1,4 @@
+SELECT lr.name, ROUND((lr.omega * 1.618), 3) AS "Fator N"
+FROM life_registry lr JOIN dimensions d 
+ON d.id = lr.dimensions_id
+WHERE lr.name LIKE '%Richard%' AND d.name IN ('C875', 'C774');
